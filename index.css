@@ -1,0 +1,85 @@
+
+body{
+	font-family: "Microsoft Yahei",verdana;;
+	color: #F2F2F2;
+}
+html {font-size: 60px!important;}
+.content h1{
+	padding-top: 1.2rem;
+	font-size: .48rem;
+	text-align: center;
+    z-index: 10;
+    text-indent: -9999px;
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+    transition: all .3s;
+}
+.content .title{
+	padding-bottom: .3rem;
+}
+.content .white{
+	color: #fff;
+}
+.active strong, .active h1 {
+    opacity: 1;
+    text-indent: 0;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    transition-delay: 0.7s;
+}
+.section {
+		position: relative;
+    overflow: hidden;
+    color: #000;
+}
+p{
+  text-indent: .2em;
+	font-size: .2em;
+}
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+}
+
+.section0{
+	background: url('./public/images/section2.jpg') no-repeat center center;
+}
+.mobile-download-box{
+	padding: .3rem;
+	text-align: center;
+}
+.mobile-btn-download{
+	display: inline-block;
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+    background: url(./public/images/sprite.png?t=1) no-repeat right -394px;
+    border-radius: 4px;
+}
+.mobile-btn-download:hover{
+	    background-position: right -454px;
+}
+.view-mobile{
+	width: 10.67rem;
+  height: 1137px;
+  margin: 0 auto;
+	border-bottom: 0;
+	background: url(./public/images/2.png) no-repeat center top;
+}
+.pic0{
+	width: 100%;
+	max-width: 10.67rem;
+}
+.div1{
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-nav>li>a {
+		    font-size: .3rem;
+		}
+}
