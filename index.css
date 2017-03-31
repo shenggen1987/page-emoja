@@ -119,6 +119,5 @@ p{
 }
 .navbar-toggle{
   padding: .18rem;
-  margin-top: .22rem;
-  margin-right: .3rem;
+  margin: .18rem .3rem;
 }
