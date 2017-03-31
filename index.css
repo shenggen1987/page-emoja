@@ -8,7 +8,7 @@ html,body{
     background-color: #ee0a3b;
 }
 .content h1{
-	padding-top: .8rem;
+	padding-top: 1.2rem;
 	font-size: .48rem;
 	text-align: center;
     z-index: 10;
@@ -99,18 +99,26 @@ p{
 /***lsg***/
 .navbar-brand {
     float: left;
-    height: .67rem;
+    height: 1rem;
     padding: .2rem;
-    font-size: .24rem;
-    line-height: .267rem;
+    font-size: .4rem;
+    line-height: .6rem;
 }
 .nav, .navbar-brand{
-  font-size: .267rem;
+  font-size: .4rem;
 }
 .navbar{
-  height: .67rem;
-  min-height: .67rem;
+  height: 1rem;
+  min-height: 1rem;
+}
+.nav li{
+  padding: .2rem 0;
 }
 #bs-example-navbar-collapse-1{
   background-color: rgb(242, 242, 242);
+}
+.navbar-toggle{
+  padding: .18rem;
+  margin-top: .22rem;
+  margin-right: .3rem;
 }
