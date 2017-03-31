@@ -3,9 +3,12 @@ body{
 	font-family: "Microsoft Yahei",verdana;;
 	color: #F2F2F2;
 }
-html {font-size: 60px!important;}
+html,body{
+    height: 100vh;
+    background-color: #ee0a3b;
+}
 .content h1{
-	padding-top: 1.2rem;
+	padding-top: .8rem;
 	font-size: .48rem;
 	text-align: center;
     z-index: 10;
@@ -46,10 +49,9 @@ p{
 }
 
 .section0{
-	background: url('./public/images/section2.jpg') no-repeat center center;
 }
 .mobile-download-box{
-	padding: .3rem;
+	padding: .2rem;
 	text-align: center;
 }
 .mobile-btn-download{
@@ -80,7 +82,7 @@ p{
 	background: url(./public/images/2.png) no-repeat center top;
 }
 .pic0{
-	width: 100%;
+	width: 10rem;
 	max-width: 10.67rem;
 }
 .div1{
@@ -91,4 +93,24 @@ p{
     .navbar-nav>li>a {
 		    font-size: .3rem;
 		}
+}
+
+
+/***lsg***/
+.navbar-brand {
+    float: left;
+    height: .67rem;
+    padding: .2rem;
+    font-size: .24rem;
+    line-height: .267rem;
+}
+.nav, .navbar-brand{
+  font-size: .267rem;
+}
+.navbar{
+  height: .67rem;
+  min-height: .67rem;
+}
+#bs-example-navbar-collapse-1{
+  background-color: rgb(242, 242, 242);
 }
