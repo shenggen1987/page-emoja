@@ -39,7 +39,8 @@
 			<div class="content">
 				<h1>手机上分享表趣图片</h1>
 					<div class="mobile-download-box">
-						<a class="mobile-btn-download ios" href="https://itunes.apple.com/cn/app/mu-ke-wang/id722179140?mt=8" target="_blank"></a>
+						<a class="mobile-btn-download ios" href="https://itunes.apple.com/us/app/表趣/id1220687564?mt=8" target="_blank"></a>
+						<a class="mobile-btn-download android hide" target="_blank" href="http://www.imooc.com/mobile/mukewang.apk"></a>
 					</div>
 					<div class="div1">
 						<img src="./public/images/2.png" class="pic0">
@@ -83,6 +84,25 @@
 		    $("body").on("click","#menu li a",function(){  
 	        $(this).closest(".navbar-collapse").removeClass("in");
 	      });
+
+	      
+        function getType(){
+        	var userAgentInfo = navigator.userAgent;
+		      if (userAgentInfo.indexOf('iPhone') > 0) {
+	            return 1;
+	        }
+	        if (userAgentInfo.indexOf('Android') > 0) {
+	            return 2;
+	        }
+	        return 0;
+        }
+        var type = getType();
+        if(type === 0){
+          $('.mobile-download-box .android').removeClass('hide');
+        }else if(type === 2){
+        	$('.mobile-download-box .ios').addClass('hide');
+          $('.mobile-download-box .android').removeClass('hide');
+        }
 		});
 	</script>
 </body>

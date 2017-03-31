@@ -56,12 +56,21 @@ p{
 	display: inline-block;
     width: 200px;
     height: 60px;
-    margin: 0 auto;
+    margin: 0 .13rem;
     background: url(./public/images/sprite.png?t=1) no-repeat right -394px;
     border-radius: 4px;
 }
 .mobile-btn-download:hover{
 	    background-position: right -454px;
+}
+.mobile-btn-download.android {
+    background-position: -100px -394px;
+}
+.mobile-btn-download.android:hover {
+    background-position: -100px -454px;
+}
+.hide{
+  z-index: -999999px;
 }
 .view-mobile{
 	width: 10.67rem;
